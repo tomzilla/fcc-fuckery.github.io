@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="jquery.form.js"></script>
+    <title>FCC Fuckery</title>
+    <style>
+      body {
+        background-color:#ddddff;
+      }
+      h1 {
+        text-align:center;
+      }
+      form {
+        width: 400px;
+        margin:0 auto;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="http://apps.fcc.gov/ecfs/upload/process" method="post" enctype="multipart/form-data" id="process">
+      <input type="hidden" value="14-28"/>
+      <label>Name:<input class="form-control" name="applicant"/></label>
+      
+    </form>
+    
+  </body>
