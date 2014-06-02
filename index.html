@@ -27,8 +27,82 @@
   <body>
     <form action="http://apps.fcc.gov/ecfs/upload/process" method="post" enctype="multipart/form-data" id="process">
       <input type="hidden" value="14-28"/>
-      <label>Name:<input class="form-control" name="applicant"/></label>
-      
+      <div class="form-group">
+        <label>* Name:<input class="form-control" name="applicant"/></label>
+        <label>Email:<input class="form-control" name="email"/></label>
+      </div>
+      <div class="form-group">
+        <label>* Address:<input class="form-control" name="address.line1"/></label>
+        <label>Address 2:<input class="form-control" name="address.line2"/></label>
+        <label>* City:<input class="form-control" name="address.city"/></label>
+        <label>* State:
+          <select name="address.state.id" id="process_address_state_id" style="width:16em">
+            <option value=""></option>
+            <option value="1">AK: ALASKA                                                                          </option>
+            <option value="2">AL: ALABAMA                                                                         </option>
+            <option value="3">AR: ARKANSAS                                                                        </option>
+            <option value="4">AZ: ARIZONA                                                                         </option>
+            <option value="5">CA: CALIFORNIA                                                                      </option>
+            <option value="6">CO: COLORADO                                                                        </option>
+            <option value="7">CT: CONNECTICUT                                                                     </option>
+            <option value="8">DC: DISTRICT OF COLUMBIA                                                            </option>
+            <option value="9">DE: DELAWARE                                                                        </option>
+            <option value="10">FL: FLORIDA                                                                         </option>
+            <option value="11">GA: GEORGIA                                                                         </option>
+            <option value="12">GU: GUAM                                                                            </option>
+            <option value="13">HI: HAWAII                                                                          </option>
+            <option value="14">IA: IOWA                                                                            </option>
+            <option value="15">ID: IDAHO                                                                           </option>
+            <option value="16">IL: ILLINOIS                                                                        </option>
+            <option value="17">IN: INDIANA                                                                         </option>
+            <option value="18">KS: KANSAS                                                                          </option>
+            <option value="19">KY: KENTUCKY                                                                        </option>
+            <option value="20">LA: LOUISIANA                                                                       </option>
+            <option value="21">MA: MASSACHUSETTS                                                                   </option>
+            <option value="22">MD: MARYLAND                                                                        </option>
+            <option value="24">ME: MAINE                                                                           </option>
+            <option value="25">MI: MICHIGAN                                                                        </option>
+            <option value="26">MN: MINNESOTA                                                                       </option>
+            <option value="27">MO: MISSOURI                                                                        </option>
+            <option value="28">MS: MISSISSIPPI                                                                     </option>
+            <option value="29">MT: MONTANA                                                                         </option>
+            <option value="30">NC: NORTH CAROLINA                                                                  </option>
+            <option value="31">ND: NORTH DAKOTA                                                                    </option>
+            <option value="32">NE: NEBRASKA                                                                        </option>
+            <option value="33">NH: NEW HAMPSHIRE                                                                   </option>
+            <option value="34">NJ: NEW JERSEY                                                                      </option>
+            <option value="35">NM: NEW MEXICO                                                                      </option>
+            <option value="36">NV: NEVADA                                                                          </option>
+            <option value="37">NY: NEW YORK                                                                        </option>
+            <option value="38">OH: OHIO                                                                            </option>
+            <option value="39">OK: OKLAHOMA                                                                        </option>
+            <option value="40">OR: OREGON                                                                          </option>
+            <option value="41">PA: PENNSYLVANIA                                                                    </option>
+            <option value="42">PR: PUERTO RICO                                                                     </option>
+            <option value="43">RI: RHODE ISLAND                                                                    </option>
+            <option value="44">SC: SOUTH CAROLINA                                                                  </option>
+            <option value="45">SD: SOUTH DAKOTA                                                                    </option>
+            <option value="46">TN: TENNESSEE                                                                       </option>
+            <option value="47">TX: TEXAS                                                                           </option>
+            <option value="48">UT: UTAH                                                                            </option>
+            <option value="49">VA: VIRGINIA                                                                        </option>
+            <option value="51">VI: VIRGIN ISLANDS                                                                  </option>
+            <option value="52">VT: VERMONT                                                                         </option>
+            <option value="53">WA: WASHINGTON                                                                      </option>
+            <option value="54">WI: WISCONSIN                                                                       </option>
+            <option value="55">WV: WEST VIRGINIA                                                                   </option>
+            <option value="56">WY: WYOMING                                                                         </option>
+            <option value="57">AS: AMERICAN SAMOA                                                                  </option>
+            <option value="58">FM: FEDERATED STATES OF MICRONESIA                                                  </option>
+            <option value="59">MH: MARSHALL ISLANDS                                                                </option>
+            <option value="60">MP: NORTHERN MARIANA ISLANDS                                                        </option>
+            <option value="61">PW: PALAU                                                                           </option>
+        </select>
+        </label>
+        <label>* Zip:<input class="form-control" name="address.zip"/></label>
+        <label>* Comments</label>
+        <textarea name="briefComment"></textarea>
+      </div>
     </form>
     
   </body>
